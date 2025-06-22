@@ -1,17 +1,22 @@
 const CallToAction = ({ onNavigate }) => (
-    <div className="py-16">
-        <div className="container mx-auto px-8">
-            <div className="bg-[#E4D6C8] rounded-2xl p-12 text-center flex flex-col items-center">
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">Create Your Magical Ghibli Artwork Today</h2>
-                <p className="text-gray-600 max-w-2xl mb-8">
-                    Join thousands of artists and Studio Ghibli fans who are creating stunning Miyazaki-inspired artwork with our Ghibli AI generator.
-                </p>
-                <button onClick={() => onNavigate('/create')} className="bg-orange-900 text-white font-bold py-3 px-8 rounded-lg hover:bg-orange-800 transition-transform transform hover:scale-105">
-                    Try Ghibli AI For Free
-                </button>
-            </div>
-        </div>
+  <div className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    <div className="container mx-auto px-6">
+      <div className="bg-gradient-to-br from-[#2e2e2e] to-[#1a1a1a] rounded-3xl p-12 text-center shadow-2xl">
+        <h2 className="text-4xl font-extrabold text-white mb-5">
+          Transform Imagination Into Ghibli-Inspired Magic
+        </h2>
+        <p className="text-gray-300 max-w-2xl mx-auto mb-10 text-lg">
+          Dive into a world of dreamlike visuals — craft breathtaking Studio Ghibli-style art powered by our AI. Let your creativity flow!
+        </p>
+        <button
+          onClick={() => onNavigate('/create')}
+          className="bg-gradient-to-r from-orange-600 to-yellow-400 text-black font-semibold py-3 px-8 rounded-xl transition-transform hover:scale-105 hover:shadow-lg cursor-pointer"
+        >
+          Start Creating for Free
+        </button>
+      </div>
     </div>
+  </div>
 );
 
 export default CallToAction;

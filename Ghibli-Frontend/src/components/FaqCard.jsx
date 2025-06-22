@@ -1,8 +1,8 @@
 const FaqCard = ({ question, children }) => (
-    <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
-        <h3 className="text-xl font-semibold mb-3">{question}</h3>
-        <p className="text-gray-600 leading-relaxed">{children}</p>
-    </div>
+  <div className="bg-gradient-to-br from-gray-800 to-gray-900 text-white p-8 rounded-2xl shadow-2xl border border-gray-700 transition-all duration-300 hover:shadow-yellow-500/10">
+    <h3 className="text-2xl font-bold mb-4 text-yellow-400">{question}</h3>
+    <p className="text-gray-300 leading-relaxed text-base">{children}</p>
+  </div>
 );
 
 export default FaqCard;

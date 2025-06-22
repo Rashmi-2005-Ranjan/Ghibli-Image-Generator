@@ -1,23 +1,27 @@
 import FaqCard from "./FaqCard.jsx";
 
 const FaqSection = () => (
-    <div className="container mx-auto py-16 px-8">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions about Ghibli AI</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-            <FaqCard question="What is the Studio Ghibli AI Generator?">
-                The Ghibli AI Generator is an advanced platform powered by AI that creates original artwork in the distinctive style of Studio Ghibli films. Our technology transforms photos or text descriptions into beautiful Ghibli art images with authentic aesthetic elements.
-            </FaqCard>
-            <FaqCard question="What are the key features of the Ghibli AI?">
-                Key features include photo-to-Ghibli art transformation, text-to-Ghibli image generation, Ghibli character creation, scene extension, Ghibli background generation, and animation preparation - all in authentic Studio Ghibli style using our specialized Ghibli generator.
-            </FaqCard>
-            <FaqCard question="Can I select specific Ghibli film styles for my Ghibli art?">
-                Absolutely! You can choose influences from various Studio Ghibli films like 'Spirited Away,' 'Princess Mononoke,' or 'My Neighbor Totoro' and customize the style, mood, and visual elements to reflect your creative vision in the generated Ghibli images.
-            </FaqCard>
-            <FaqCard question="Is the Studio Ghibli AI Generator available on mobile?">
-                Yes, our Ghibli AI platform is accessible on both desktop and mobile devices via web browsers, allowing you to create Ghibli-style artwork and Ghibli images wherever you are.
-            </FaqCard>
-        </div>
+  <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black py-20 px-6">
+    <div className="container mx-auto">
+      <h2 className="text-4xl font-extrabold text-center text-white mb-14">
+        Common Questions About Ghibli AI
+      </h2>
+      <div className="grid md:grid-cols-2 gap-10">
+        <FaqCard question="How does the Ghibli AI Generator work?">
+          Our AI platform turns your photos or text prompts into unique artwork styled after beloved Studio Ghibli films. It’s trained to replicate the dreamy aesthetics of Ghibli with precision and creativity.
+        </FaqCard>
+        <FaqCard question="What can I create using the Ghibli AI?">
+          You can transform photos into Ghibli-style illustrations, generate scenes from text, create characters, extend landscapes, and prep animation-style frames—all in that magical Ghibli feel.
+        </FaqCard>
+        <FaqCard question="Can I choose specific movie styles like Totoro or Mononoke?">
+          Yes! Select visual themes inspired by films like *Spirited Away*, *Princess Mononoke*, or *My Neighbor Totoro* to guide the mood, detail, and art direction of your output.
+        </FaqCard>
+        <FaqCard question="Is it mobile-friendly?">
+          Definitely. Ghibli AI works seamlessly on mobile and desktop browsers, so you can create and explore anytime, anywhere.
+        </FaqCard>
+      </div>
     </div>
+  </div>
 );
 
 export default FaqSection;
